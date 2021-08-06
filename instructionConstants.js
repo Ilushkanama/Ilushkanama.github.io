@@ -15,13 +15,15 @@ export const InstructionNames = {
 const InstructionCodes = {
   [InstructionNames.add]: '0000',
   [InstructionNames.sub]: '0001',
-  [InstructionNames.store]: '1011',
-  [InstructionNames.read]: '1100',
-  [InstructionNames.load]: '100100',
-  [InstructionNames.jump]: '10100000',
-  [InstructionNames.increment]: '001000',
-  [InstructionNames.jumpToRegister]: '101010',
-  [InstructionNames.stop]: '10000000'
+  [InstructionNames.store]: '1010', // 10
+  [InstructionNames.read]: '1011',  // 11
+  [InstructionNames.load]: '100100',  // 9
+  [InstructionNames.jump]: '11000000', // 12
+  [InstructionNames.shiftRight]: '010100', // 5
+  [InstructionNames.shiftLeft]: '010000', // 4
+  [InstructionNames.increment]: '001000', // 2
+  [InstructionNames.jumpToRegister]: '110010', // 12 but different
+  [InstructionNames.stop]: '10011000' // 9 but different
 }
 
 export function getInstructionCode(instructionName) {
