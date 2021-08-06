@@ -1,0 +1,19 @@
+div {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+th,
+td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+th {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: start;
+}
