@@ -9,7 +9,9 @@ export const InstructionNames = {
   shiftLeft: 'shl',
   increment: 'inc',
   jumpToRegister: 'jmpr',
-  stop: 'stop'
+  stop: 'stop',
+  jumpIfNegative: 'jn',
+  test: 'test'
 }
 
 const InstructionCodes = {
@@ -23,7 +25,9 @@ const InstructionCodes = {
   [InstructionNames.shiftLeft]: '010000', // 4
   [InstructionNames.increment]: '001000', // 2
   [InstructionNames.jumpToRegister]: '110010', // 12 but different
-  [InstructionNames.stop]: '10011000' // 9 but different
+  [InstructionNames.stop]: '10011000', // 9 but different
+  [InstructionNames.jumpIfNegative]: '11000100', // 12 but different, once again
+  [InstructionNames.test]: '011000' // 6
 }
 
 export function getInstructionCode(instructionName) {

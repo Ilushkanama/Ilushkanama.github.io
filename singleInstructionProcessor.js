@@ -9,7 +9,8 @@ const singleRegisterInstructions = [
   InstructionNames.increment,
   InstructionNames.jumpToRegister,
   InstructionNames.shiftLeft,
-  InstructionNames.shiftRight
+  InstructionNames.shiftRight,
+  InstructionNames.test
 ]
 
 const twoRegistersInstructions = [
@@ -21,7 +22,8 @@ const twoRegistersInstructions = [
 
 const constantInstructions = [
   InstructionNames.load,
-  InstructionNames.jump
+  InstructionNames.jump,
+  InstructionNames.jumpIfNegative
 ]
 
 const noOperandsInstructions = [
