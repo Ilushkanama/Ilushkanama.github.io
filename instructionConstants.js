@@ -11,6 +11,7 @@ export const InstructionNames = {
   jumpToRegister: 'jmpr',
   stop: 'stop',
   jumpIfNegative: 'jn',
+  jumpIfZero: 'jz',
   test: 'test'
 }
 
@@ -27,6 +28,7 @@ const InstructionCodes = {
   [InstructionNames.jumpToRegister]: '110010', // 12 but different
   [InstructionNames.stop]: '10011000', // 9 but different
   [InstructionNames.jumpIfNegative]: '11000100', // 12 but different, once again
+  [InstructionNames.jumpIfZero]: '11001100', // 12 but different
   [InstructionNames.test]: '011000' // 6
 }
 

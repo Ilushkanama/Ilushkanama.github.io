@@ -23,7 +23,8 @@ const twoRegistersInstructions = [
 const constantInstructions = [
   InstructionNames.load,
   InstructionNames.jump,
-  InstructionNames.jumpIfNegative
+  InstructionNames.jumpIfNegative,
+  InstructionNames.jumpIfZero
 ]
 
 const noOperandsInstructions = [
